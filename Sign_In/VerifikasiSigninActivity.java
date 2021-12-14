@@ -13,12 +13,12 @@ import android.widget.EditText;
 
 import dalvik.system.BaseDexClassLoader;
 
-public class FragmentBagian extends Fragment {
+public class FragmentBagian extends Fragment { // tambahkan turunan dari Fragment extends Fragment untuk layout yang tadi sudah dibuat
     private static EditText txtEmail,txtPass; // membuat sebuat variable pada editText
 
     //untuk membuat fragment supaya bisa terpasang
 
-    public BagianFragmentListener pengaturActivity; // membuat variable dari BagianFragmentListener
+    public BagianFragmentListener pengaturActivity; // membuat variable dari BagianFragmentListener/ yang nantinya akan di olah lagi di main activity
     public interface BagianFragmentListener{ // membuat interface yang nantinya parameter data akan dikirim
         public void kirim(String email, String pass); // dikirim ke pengaturActivity
     }
